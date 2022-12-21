@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js" defer></script>
+    <title>Uploads</title>
+</head>
+<body>
+    <form  autocomplete="off">
+        <button  id="clearInput">clear input</button>
+        <label for="">enter text:</label>
+        <div>
+            <textarea name="" id=""   placeholder="please enter text here...."></textarea>
+        </div>
+        <label for="">enter name:</label>
+        <div>
+            <input type="text"  placeholder="Enter your name...."/>
+        </div>
+        <label for="">upload an image:</label>
+        <div>
+            <input type="file" id="file" />
+        </div>
+        <div>
+            <button id="submit">submit</button>
+        </div>
+    </form>
+    <section class="cardList">
+    </section>
+
+    <template>
+        <article>
+            <div class="card-header">
+                <img src=""
+                    alt="profileImage">
+                <p>
+                <b id="name"></b>
+        
+                </p>
+                <button id="delete">&times</button>
+            </div>
+            <p id="body" ></p>
+        
+            <button class="edit">edit</button>
+        </article>
+    </template>
+</body>
+</html>

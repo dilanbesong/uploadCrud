@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.55);
+    overflow-x: hidden;
+    /* color: #fff; */
+}
+
+img {
+    width: 80px;
+    height: 70px;
+}
+
+textarea:focus, input:focus {
+    border-color: rgba(82, 168, 236, .8);
+    outline: 0;
+    outline: thin dotted \9;
+    -moz-box-shadow: 0 0 8px rgba(82, 168, 236, .6);
+    box-shadow: 0 0 8px rgba(82, 168, 236, .6) !important;
+}
+form {
+    width: 60%;
+    min-width: 350px;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-radius: 8px;
+}
+form textarea, input, button {
+    outline: none;
+    border-radius:3px;
+    border: 1px solid lightgrey;
+    width: 55vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    color:rgb(98, 82, 82);   
+}
+
+form label {
+    color:rgb(70, 60, 60) ;
+}
+
+form textarea {
+    height:55px;
+    resize: none;
+    text-align: center;
+    overflow: hidden;
+}
+form  input {
+    height: 28px;
+    text-indent: 3px;
+}
+form button {
+    width:55vw;
+    outline: none;
+    color: #fff;
+    background-color: rgb(110, 110, 246);
+    border: none;
+    padding: 0.55rem;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 50px;
+}
+form #clearInput {
+    background-color: orange;
+    width: 60%;
+}
+form button:hover {
+    background-color: rgb(86, 86, 242);
+}
+form label {
+    padding-top: 1rem;
+}
+form div {
+    margin-top: 1rem;
+}
+
+.cardList {
+    width: 80%;
+    min-width:350px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:8px;
+    color: rgb(238, 225, 225);
+}
+
+.cardList article {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius:3px;
+    padding: 0.75rem;
+    margin-top:8px;
+    width:50%;
+    min-width:370px;
+    color: rgb(30, 9, 9);
+}
+.cardList article .card-header {
+   display: flex;
+   width: 90%;
+}
+#delete {
+    width:2.5rem;
+    height:2.5rem;
+    border-radius:30%;
+    text-align: center;
+    align-self: center;
+    font-size: 1.2rem;
+    background-color: rgb(219, 112, 165);
+}
+.cardList article .card-header b {
+    color:rgb(105, 73, 73);
+}
+.cardList article p {
+    line-height: 1.8rem;
+    padding: 1rem;
+    text-align: justify;
+    width:90%;
+    word-break: break-all;
+}
+.cardList article button {
+    background-color:rgb(7, 71, 135);
+    color:#fff;
+    align-self: flex-end;
+    width:20vw;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    .cardList article {
+        width:100%;
+        min-width: 320px;
+        padding: 1rem;
+    }
+}
